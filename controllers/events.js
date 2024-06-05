@@ -64,7 +64,7 @@ const updateEvent = async (req, res) => {
         if (event.user.toString() !== uid) {
             return res.status(401).json({
                 ok: false,
-                msg: 'You can\' edit this event'
+                msg: 'You can\'t edit this event'
             });
         }
 
@@ -108,7 +108,7 @@ const deleteEvent = async (req, res) => {
         if (event.user.toString() !== uid) {
             return res.status(401).json({
                 ok: false,
-                msg: 'You can\' delete this event'
+                msg: 'You can\'t delete this event'
             });
         }
 
